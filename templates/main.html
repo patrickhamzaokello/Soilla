@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>SOILLA</title>
+    <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='images/favicon.png')}}" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}" />
+</head>
+
+<body>
+
+    <div class="headingbar">
+
+        <a href="/">
+            <img class="logo" alt="logo" src="{{url_for('static', filename='images/soillalogo.svg')}}">
+        </a>
+
+    </div>
+
+    <div class="introimage">
+        <img class="intropicture" src="{{url_for('static', filename='images/womanphone.jpg')}}">
+    </div>
+
+
+
+    <div class="missionheading">
+        <h2 class="missiontext">We are on a Mission to Map Uganda's Soils.</h2>
+    </div>
+
+
+    <section class="whitesection">
+
+        <div class="container">
+
+            <div class="contentcontainer">
+
+                <div class="leftimage">
+
+                    <img alt="descriptionimage" src="{{url_for('static', filename='images/mansmiling.jpg')}}">
+
+                </div>
+
+                <div class="description">
+                    <h3 class="descriptiontitle">Background Statement</h3>
+
+                    <p class="descriptiontext">While agriculture is one of the key sectors in Uganda’s economy
+                        accounting for about 25% of the GDP and 65% of total export earnings while employing about 70%
+                        of the population, it remains largely subsistent.
+                        In fact, the rate of growth of the sector is no longer in tandem with that of the population.
+                        One of the major reasons is because of the limited application of technologies in agriculture.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <section>
+        <div class="container">
+            <h1 class="appname">SOILLA</h1>
+            <h5 class="textheading">Soil Classification and Crop Suggestion Tool</h5>
+            <p>
+                This is a Tool designed to identify soil sample types and give
+                suggestions for suitable plants to be planted based uploaded soil image.
+                This Model is trained to detect loam, clay and sand soil
+            </p>
+
+
+            <div class="childrencontainer">
+                <div class="product-card">
+                    <div class="childimage">
+                        <img src="{{url_for('static', filename='images/planting.png')}}" />
+                    </div>
+                    <h4 class="childname">Crop Suggestion</h4>
+                    <p>Soilla Can Suggest Crops to be Planted on a given soil sample</p>
+
+                    <p class="linkss">
+                        <a href="#" class="product-card__link">Read More</a>
+                    </p>
+                    <div class="product-card__actions">
+                        <a href="john">donate</a>
+                        <a href="john">more info</a>
+                    </div>
+                </div>
+
+
+
+                <div class="product-card">
+                    <div class="childimage">
+                        <img src="{{url_for('static', filename='images/agronomy.png')}}" />
+                    </div>
+
+                    <h4 class="childname">Soil Classification</h4>
+                    <p>Soilla Uses Deep Learning to Classify Soil types as either (Loam, Clay and Sand)</p>
+
+                    <p class="linkss">
+                        <a href="#" class="product-card__link">Read More</a>
+                    </p>
+                    <div class="product-card__actions">
+                        <a href="soil">donate</a>
+                        <a href="soil">more info</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="childimage">
+                        <img src="{{url_for('static', filename='images/soil.png')}}" />
+                    </div>
+                    <h4 class="childname">Soil Management</h4>
+                    <p>Soilla Helps Farmers to properly manage their soil through access of tips on soil care</p>
+
+                    <p class="linkss">
+                        <a href="#" class="product-card__link">Read More</a>
+                    </p>
+                    <div class="product-card__actions">
+                        <a href="joss">donate</a>
+                        <a href="joss">more info</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="childimage">
+                        <img src="{{url_for('static', filename='images/analytics.png')}}" />
+                    </div>
+                    <h4 class="childname">On Demand Reports</h4>
+                    <p>Soilla Generates on Demand Reports on Soil Analysis perform and every record is Saved Securely
+                    </p>
+
+                    <p class="linkss">
+                        <a href="#" class="product-card__link">Read More</a>
+                    </p>
+                    <div class="product-card__actions">
+                        <a href="plss">donate</a>
+                        <a href="plss">more info</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="sponserdiv">
+                <div class="sponsorshipform">
+
+                    <form action="#">
+                        <div class="form-group">
+                            <input id="childnameinput" type="text" name="childname" class="form-control"
+                                placeholder="Child`s Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="" class="form-control" placeholder="Sponsor`s Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="" class="form-control" placeholder="Sponsor`s Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="" class="form-control" placeholder="Amount in $">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Message"
+                                spellcheck="false"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Sponsor" class="btn btn-primary py-3 px-5">
+                        </div>
+                    </form>
+
+                    <button id="cancelbtn" onclick="cancelsponsohip()">Cancel </button>
+
+
+                </div>
+            </div>
+    </section>
+
+
+
+
+    <script src="{{url_for('static', filename='main.js')}}"></script>
+
+    </div>
+</body>
+
+</html>
